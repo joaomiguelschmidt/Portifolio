@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor-principal: #4A5D75;      /* tom mais neutro, elegante */
+    --cor-secundaria: #1E2A38;     /* contraste forte */
+    --cor-destaque: #C92BFC;       /* roxo neon gamer */
+    --cor-fundo: #F5F7FA;          /* fundo suave */
+    --cor-card: #ffffff;           /* cards claros */
+    --sombra: rgba(0,0,0,0.15);    /* sombra leve */
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Destaques */
+.lead {
+    color: var(--cor-destaque);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Links */
+a, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover, .btn-link:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Badges (habilidades) */
+.badge {
+    font-size: 0.9rem;
+    padding: 0.6em 1em;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px var(--sombra);
+}
+
+/* Cards dos projetos */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--sombra);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-title {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+/* Botões */
+.btn-outline-primary {
+    border-color: var(--cor-destaque);
+    color: var(--cor-destaque);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: #fff;
+}
+
+/* Modais */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 6px 15px var(--sombra);
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+}
+
+.modal-footer a {
+    text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+    border-top: 2px solid var(--cor-principal);
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--cor-destaque);
+}
+
+footer a {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+footer a:hover {
+    color: var(--cor-destaque);
+}
